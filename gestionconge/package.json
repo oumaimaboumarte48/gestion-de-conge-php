@@ -1,0 +1,29 @@
+{
+  "name": "brief_demande-de-conge",
+  "version": "1.0.0",
+  "description": "1. Une interface pour gérer les salariés (Ajout, Modification, Suppression)  avec le maximum des informations pour chaque employé (nom, prénom, CIN, tél., email, grade et service) dans la BD.\r 2. Possibilité de gérer les congés de chaque employé à condition de valider le congé par un administrateur. Les demandes sont caractérisées par : \r     - Numéro, date demande, type congé demandé, date de début, date de retour, nombre de jour et décision, \r     - Dont on a 3 type de congé :  \r         * Congé annuel : 21 jours par an, cumulable.  \r         * Congé exceptionnel ou permissions d’absence : \r             - 10 jours par an. Liée aux évènements familiaux. \r             - Le pèlerinage aux Lieux saints de l’Islam.  \r         * Congé de maladie : Les congés pour raison de santé.  \r         * Maternité 14 semaines.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "node-sass scss/style.scss dist/css/style.css --watch",
+    "compile:sass": "node-sass scss/style.scss dist/css/style.comp.css",
+    "concat:css": "concat -o dist/css/style.concat.css dist/css/additional.css dist/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" dist/css/style.concat.css  -o dist/css/style.prefix.css",
+    "compress:css": "node-sass dist/css/style.prefix.css dist/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakaria-batty/Brief_Demande-de-Conge.git"
+  },
+  "keywords": [],
+  "author": "zakaria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zakaria-batty/Brief_Demande-de-Conge/issues"
+  },
+  "homepage": "https://github.com/zakaria-batty/Brief_Demande-de-Conge#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 28px;
+    &__row{
+        background: white;
+        padding: 26px;
+        &__col{
+            &__card{
+                &__body{
+                    &__table{
+                        &__tr{
+                            background: antiquewhite;
+                            &__th{
+                                padding-right: 64px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

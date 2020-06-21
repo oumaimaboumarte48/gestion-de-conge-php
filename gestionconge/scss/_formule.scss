@@ -1,0 +1,118 @@
+//nav_bar
+
+header{
+    width: 100%;
+    background: white;
+    .profil {
+            display: flex; 
+            display: flex;
+            font-size: 12px;
+            font-family: cursive;
+            justify-content: flex-end;
+            margin-right: 29px;
+            h1{
+                padding-left: 22px;
+            }
+        img{
+            width: 44px;
+            border-radius: 54%;
+            position: relative;
+            left: 10px;
+            padding: 10px;
+        }
+    }
+    .navbar{
+        &__ul{
+            display: flex;
+            padding-left: 60px;
+            padding-bottom: 25px;
+            &__list{
+                padding-left: 30px;
+            }
+        }
+        &__btn{
+            float: right;
+            margin: -43px 29px 0px 0px;
+        }
+    }
+
+}
+// section les inputs
+// .affiche{
+//     display: none !important;
+// }
+// button de congé
+#demande{
+    color: black;
+    font-family: cursive;
+}
+
+#msg{
+    text-align: center;
+    font-size: 29px;
+    font-family: cursive;
+    margin: 15px;
+    color: #659a12;
+}
+ #demande:hover {
+    padding: 6px;
+    border: 1px solid $color-bck2;
+    border-radius: 9px;
+    background: linear-gradient(to right, $color-btn, $color-bck2);
+}
+// formule
+.content{
+    width: 100%;
+    margin-top: 56px;
+    .errors{
+        text-align: center;
+        font-size: 29px;
+        font-family: cursive;
+        margin: 15px;
+        color: red;
+    }
+
+   .formule{
+        display: flex;
+        justify-content: center;
+        width: 105%;
+        float: right;
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 109px;
+            grid-row-gap: 8px;
+            // background-color: white;
+            &__label{
+                font-size: 17pt;
+                font-family: cursive;
+            }
+        &__input{
+            padding: 7px;
+            padding-left: 37px;
+            border-radius: 9px;
+            border: 1px solid gray;
+            width: 108%;
+            font-size: 17px;
+            font-family: monospace;
+        }
+        &__input:hover{border: 2px solid $hover-input}
+        &__btn{
+            width: 46%;
+            padding: 9px;
+            margin-top: 24px;
+            border: 1px solid $color-bck2;
+            border-radius: 9px;
+            background: linear-gradient(to right, $color-btn, $color-bck2);
+            font-size: 17px;
+            font-family: monospace;
+        }
+        &__btn:hover {
+            background: $hover-btn;
+          //   color: orange;
+          }
+    }
+
+}
+}

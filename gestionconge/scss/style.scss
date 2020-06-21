@@ -1,0 +1,29 @@
+$color-bck:red;
+$color-bck2:orange;
+$color-btn:#FFCCBC;
+$color-b: brown;
+$hover-btn:#ffa50047;
+$hover-input:#15ff00;
+// *{
+//     text-decoration: none;
+// }
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+   
+}
+a {text-decoration: none;}
+li {list-style: none;}
+// a:link, a:visited { color: black;}
+// a:hover, a:active {color: #ffc107;}
+
+input:focus, a:focus,button:focus{
+    outline: none;
+}
+
+@import "signIn";
+@import "_formule";
+@import "_m_emp";

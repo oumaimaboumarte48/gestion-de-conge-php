@@ -1,0 +1,32 @@
+.body{
+    background:linear-gradient(to left, $color-bck, $color-bck2);
+
+.form{
+    padding: 38px;
+    margin: 74px auto;
+    text-align: center;
+    &__input{
+        padding: 10px;
+        text-align: center;
+        border-radius: 9px;
+        border: 1px solid $color-bck;
+        width: 24%;
+        font-size: 18px;
+        font-family: monospace;
+    }
+    &__input:hover{border: 2px solid #15ff00}
+    &__btn{
+        width: 17%;
+        padding: 11px;
+        border: 1px solid $color-bck2;
+        border-radius: 9px;
+        background: linear-gradient(to right, $color-btn, $color-bck2);
+        font-size: 17px;
+        font-family: monospace;
+        color: $color-b;
+    }
+    &__btn:hover {
+        background: #ffa50047;
+      }
+}
+}
